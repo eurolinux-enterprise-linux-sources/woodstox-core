@@ -4,7 +4,7 @@
 
 Name:             %{core_name}
 Version:          4.1.2
-Release:          8%{?dist}
+Release:          7%{?dist}
 Summary:          High-performance XML processor
 License:          ASL 2.0 or LGPLv2+
 URL:              http://%{base_name}.codehaus.org/
@@ -90,9 +90,6 @@ install -Dpm 644 pom-lgpl.xml %{buildroot}%{_mavenpomdir}/JPP-%{name}-lgpl.pom
 %doc release-notes/asl/ASL2.0 release-notes/lgpl/LGPL2.1
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 4.1.2-8
-- Mass rebuild 2013-12-27
-
 * Thu Aug 15 2013 Stanislav Ochotnicky <sochotnicky@redhat.com> - 4.1.2-7
 - Migrate away from mvn-rpmbuild (#997432)
 
